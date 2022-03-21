@@ -79,3 +79,41 @@ const outputx = users.reduce(function(acc,curr){
     return acc;
 },[]);
 console.log(outputx);
+
+//find() Returns the value of the first element in an array that pass a test
+const ages = [3,5,7,9,11];
+function checkage(age)
+{
+    return age>4;
+}
+console.log(ages.find(checkage));//5 
+ 
+//from()
+let text = "{ABCDEFG"
+const myArr = Array.from(text);
+console.log(myArr)
+//7207430249
+
+//key() returns iterators
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+let textt = "";
+for (let x of keys) {
+  textt += x ;
+}
+console.log(textt);
+
+//slice
+console.log(fruits.slice(0,3));
+console.log(fruits.slice(-3,-1));
+
+//some() method checks if any array elements pass a test
+const age = [1,2,3,44,66,77]
+console.log(age.some(checkadult))
+function checkadult(x){
+    return x>18;
+}
+
+//splice()
+fruits.splice(1,2)
+console.log(fruits)
