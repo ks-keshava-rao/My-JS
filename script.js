@@ -11,3 +11,9 @@ console.log(f)
 for(let x of f){
     console.log(x)
 }
+//Checks if every element in an array pass a test
+// arr.every(check)
+function check(ele){
+    return ele>7;
+}
+console.log(arr.every(check))
