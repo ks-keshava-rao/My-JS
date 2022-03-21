@@ -48,3 +48,26 @@ return acc;
 console.log(outputr); 
 
 //tricky 
+const users = [
+   { 
+    firstName : 'keshav' ,
+    age : 10 ,
+    lastname : 'rao'
+    },
+   { firstName : 'raj' ,
+     age : 26 , 
+     lastname : 'kum'
+   },
+   { firstName : 'ramesh' ,
+    age : 33 , 
+    lastname : 'na'
+  },
+  { firstName : 'tom' ,
+    age : 44 , 
+    lastname : 'uncle'
+  },
+]
+// chaining the map filter
+const outputo = users.filter(x => x.age<40)
+.map(x=>x.firstName);
+console.log(outputo); 
