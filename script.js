@@ -117,3 +117,9 @@ function checkadult(x){
 //splice()
 fruits.splice(1,2)
 console.log(fruits)
+
+//join()
+const fruitss = [1,2,3,4,"ss"];
+console.log(fruitss.join(" and "))
+
+
