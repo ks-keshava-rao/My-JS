@@ -13,4 +13,13 @@ obj.display()
 let  obj2 = new Object();
 obj.firstName = "rahul";
 console.log(obj2)
+
+//factory function 
+ function obj2 (){
+    return {
+         age : 33
+     }
+ }
+ console.log(obj2)
+
 //Object create 
