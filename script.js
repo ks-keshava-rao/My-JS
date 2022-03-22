@@ -73,7 +73,7 @@ const outputo = users.filter(x => x.age<40)
 console.log(outputo); 
 //using reduce
 const outputx = users.reduce(function(acc,curr){
-    if(curr.age<=30){
+    if(curr.age<=40){
         acc.push(curr.firstName);
     }
     return acc;
