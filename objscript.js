@@ -48,6 +48,10 @@ let proto = {
     age :22 ,
     lastName : "rao" ,
 }
-let par = Object.create(proto,{});
+let par = Object.create(proto,{
+    college : { 
+        
+    }
+});
 console.log(par.firstName)
 
