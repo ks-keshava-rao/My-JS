@@ -40,5 +40,14 @@ let car1 = new cardata('huyndai','suv',2022);
 let car2 = new cardata('skoda','cruiser',2021);
 car1.display()
 car2.display()
-console.log(window.display())
+// console.log(window.display())
 //iteratables map set , weak map and weak set, iimedietly invoking functions , call ,binding,apply,
+
+let proto = {
+    firstName : "keshav",
+    age :22 ,
+    lastName : "rao" ,
+}
+let par = Object.create(proto,{});
+console.log(par.firstName)
+
