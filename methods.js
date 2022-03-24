@@ -15,3 +15,22 @@ let names2 = {
     }
  // function borrow
  names.display.call(names2);
+
+
+ let det = {
+    firstname : 'pavan'
+    , lastName : 'kumar'
+    //,place : 'hyderabad'
+    }
+ let det2 = {
+    firstname : 'johnny '
+    , lastName : 'lever'
+    //,place : 'hyderabad'
+    }
+
+displaydet = function(places){
+    console.log(this.firstname + " "+this.lastName+" lives in "+places)
+}
+
+displaydet.call(det,"mumbai");
+displaydet.call(det2,"chNDIGARH");
