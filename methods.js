@@ -28,9 +28,14 @@ let names2 = {
     //,place : 'hyderabad'
     }
 
-displaydet = function(places){
-    console.log(this.firstname + " "+this.lastName+" lives in "+places)
+displaydet = function(places,state='NA'){
+    console.log(this.firstname + " "+this.lastName+" lives in "+places+
+    ','+state)
 }
 
-displaydet.call(det,"mumbai");
+displaydet.call(det,"mumbai",'MH');
 displaydet.call(det2,"chNDIGARH");
+
+//Apply() method
+
+// displaydet.call(det,"mumbai");
