@@ -39,7 +39,9 @@ displaydet.call(det2,"chNDIGARH",'PB');
 //Apply() method
 
 displaydet.call(det,["DELHI",'DL']);
- // bind() returns the copy of function
-displaydata = displaydet.bind(det,"mumbai",'MH');
+ // bind() returns the copy of function which can beinvoked later
+displaydata = displaydet.bind(det);
 console.log(displaydata);
-displaydata();
+displaydata("mumbai",'MH');
+//Methods like call(), apply(), and bind() can refer this to any object.
+//bind() is also used to prevent this, as this is lost in callback functions
