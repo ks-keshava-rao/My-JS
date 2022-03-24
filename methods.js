@@ -30,12 +30,16 @@ let names2 = {
 
 displaydet = function(places,state='NA'){
     console.log(this.firstname + " "+this.lastName+" lives in "+places+
-    ','+state)
+    ','+ state )
 }
 
 displaydet.call(det,"mumbai",'MH');
-displaydet.call(det2,"chNDIGARH");
+displaydet.call(det2,"chNDIGARH",'PB');
 
 //Apply() method
 
-// displaydet.call(det,"mumbai");
+displaydet.call(det,["DELHI",'DL']);
+ // bind() returns the copy of function
+displaydata = displaydet.bind(det,"mumbai",'MH');
+console.log(displaydata);
+displaydata();
