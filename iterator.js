@@ -50,3 +50,12 @@ console.log(arrit.next());
 console.log(arrit.next());
 //objects can be iterated by for..in loop and for..each 
 //loop by implementing the keys values and entries methods
+let my = {
+    title :'bollywood',
+    videolength :15 ,
+    name:"kkr",
+    description : " this it this",
+    creator : "arijits singh",
+    copyrights : "Eros now",
+    lyrics : "javed ali"
+}
