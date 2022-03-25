@@ -54,3 +54,6 @@ console.log(arrk);
 let arrv = Array.from(mymap.values());
 console.log(arrv);
 
+
+//WEAK SET
+
