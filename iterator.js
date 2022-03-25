@@ -5,6 +5,7 @@
 // @@iterator method, meaning that the object
 // must have a property with a @@iterator key
 //  which is available via constant Symbol.iterator:
+// for...of loop , of --> next()
 
 
 const arr = ['mumbai','hyderabad', ' chennai', ' delhi'];
@@ -47,3 +48,5 @@ console.log(arrit.next());
 console.log(arrit.next());
 console.log(arrit.next());
 console.log(arrit.next());
+//objects can be iterated by for..in loop and for..each 
+//loop by implementing the keys values and entries methods
