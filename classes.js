@@ -26,5 +26,8 @@ console.log(nano.runningfrom())
 console.log(car.add(34,55))
 //inheritance 
 class sportsCar extends car {
-    constructor()
+    constructor(company,model,engine,yom,topSpeed,horsepower){
+        //to call the constructor of the parent class
+        super(company,model,engine,yom)
+    }
 }
