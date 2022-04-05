@@ -53,3 +53,10 @@ employee.prototype.slogann = function(){
 }
 let emp1 = new employee("keshava ",34444, 8);
 console.log(emp1)
+//for similar profile
+function programmer(name , salary , experience, language){
+    employee.call(this,name,salary, experience);
+    this.language = language ;
+}
+let p1 = new programmer("rahul",2999,87,"java");
+console.log(p1);
