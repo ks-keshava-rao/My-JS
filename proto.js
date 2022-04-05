@@ -57,11 +57,17 @@ function programmer(name , salary , experience, language){
     employee.call(this,name,salary, experience);
     this.language = language ;
 }
-let p1 = new programmer("rahul",2999,87,"java");
-console.log(p1);
 //inherit the prototype of employee into 
-programmer.prototype = Object.create(employee.prototype)
+programmer.prototype = Object.create(employee.prototype);
+
 //manually set the constructor 
+
+programmer.prototype.constructor = programmer;
+let p1 = new programmer("rahul",2999,87,"java");
+
+// console.log(p1.slogan())
+console.log(p1);
+
 //combine two objects 
 //res and spread parameters
 //immedietly invoking functions
