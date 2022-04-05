@@ -32,17 +32,16 @@ console.log(inh)
 const inh2 = Object.create(proto,{
     name : {
         value : "maruti",
-        writable : true
+        writable : true //enumerable 
     },
     engine : {
         value : "bs4",
         writable : true
     }
 });
-
 inh2.changename("mitshibushi");
 console.log(inh2);
-
+inh2.__proto__  = proto 
 function employee(name,salary,experience){
     this.name = name ;
     this.salary = salary;
@@ -60,3 +59,11 @@ function programmer(name , salary , experience, language){
 }
 let p1 = new programmer("rahul",2999,87,"java");
 console.log(p1);
+//inherit the prototype of employee into 
+programmer.prototype = Object.create(employee.prototype)
+//manually set the constructor 
+//combine two objects 
+//res and spread parameters
+//immedietly invoking functions
+//propetry flags and descriptors
+//getters and setters for objects
