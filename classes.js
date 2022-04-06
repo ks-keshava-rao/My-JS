@@ -58,3 +58,13 @@ console.log(lambo.carInfo());
 console.log(lambo.runningfrom());
 console.log(lambo.category()); 
 console.log(sportsCar.totalPower(100,45)); 
+
+//classes also support class expressions 
+let varclass = class {
+    method(){
+        return "this is class expression"
+    }
+}
+let instance = new varclass();
+console.log(instance.method());
+console.log(varclass.name)
