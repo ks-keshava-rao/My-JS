@@ -6,7 +6,7 @@ class  car {
         this.engine = engine;
         this.yom = yom;
     }
-    // let year = 2022;
+    static year = 2022;
 
     //class methods 
     carInfo(){
@@ -68,3 +68,18 @@ let varclass = class {
 let instance = new varclass();
 console.log(instance.method());
 console.log(varclass.name)
+//inheriting from constructor objects 
+function animal(name){
+    this.name = name;
+}
+animal.prototype.speak = function () {
+    console.log(`${this.name} makes a noise`);
+}
+class dog extends animal {
+        speak(){
+            console.log(`${this.name } barks`);
+        }
+}
+let d = new dog("tommy");
+d.speak();
+//species
