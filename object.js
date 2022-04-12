@@ -32,3 +32,8 @@ let out4 = 'kk' in my;
 console.log(out4);
 out2 = my.hasOwnProperty('w')
 console.log(out2);
+
+//combine two objects
+let person = {
+    firstname : " keshab"
+}
