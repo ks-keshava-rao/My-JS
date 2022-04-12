@@ -82,4 +82,20 @@ class dog extends animal {
 }
 let d = new dog("tommy");
 d.speak();
-//species
+
+//Mix-ins
+let calculatorMixin = (base) => class extends base {
+    calc(){
+        return "calcfunction";
+    }
+};
+let randomizerMixin = (base) => class extends base {
+    randomize(){
+        return "randomized func" }
+};
+class mul { }
+class bar extends calculatorMixin(randomizerMixin(mul)){
+}
+let b = new bar;
+console.log(b.calc())
+console.log(b.randomize())
