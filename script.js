@@ -122,4 +122,3 @@ console.log(fruits)
 const fruitss = [1,2,3,4,"ss"];
 console.log(fruitss.join(" and "))
 
-
