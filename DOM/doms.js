@@ -19,3 +19,9 @@ console.log( document.body.previousSibling ); // HTMLHeadElement
 console.log(document.body.children);
 console.log(document.body.firstElementChild);
 console.log(document.body.lastElementChild);
+//list tags
+const ultag = document.body.children[1];
+console.log(ultag);
+const litag = ultag.children ;
+console.log(litag[0].textContent)
+console.log(litag[0].nextElementSibling.textContent)
