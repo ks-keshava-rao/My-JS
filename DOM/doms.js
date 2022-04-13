@@ -25,3 +25,12 @@ console.log(ultag);
 const litag = ultag.children ;
 console.log(litag[0].textContent)
 console.log(litag[0].nextElementSibling.textContent)
+
+//table DOM manipulation 
+const tabletag = document.body.children[3];
+console.log(tabletag.tBodies[0].rows[1].cells[0].textContent);
+console.log(tabletag.tBodies[0].rows[1].cells[0].style = "background-color:yellow");
+
+
+
+
