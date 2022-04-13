@@ -34,8 +34,10 @@ console.log(tabletag.tBodies[0].rows[1].cells[0].style = "background-color:yello
 const table2tag = document.body.children[5];
 console.log(table2tag.tBodies[0].rows[0].cells[0].textContent);
 
-table2tag.tBodies[0].rows[0].style = "background-color:yellow";
-table2tag.tBodies[0].rows[1].style = "background-color:red";
-table2tag.tBodies[0].rows[2].style = "background-color:brown";
-table2tag.tBodies[0].rows[3].style = "background-color:orange";
-table2tag.tBodies[0].rows[4].style = "background-color:blue";
+// table2tag.tBodies[0].rows[0].style = "background-color:yellow";
+// table2tag.tBodies[0].rows[1].style = "background-color:red";
+// table2tag.tBodies[0].rows[2].style = "background-color:brown";
+// table2tag.tBodies[0].rows[3].style = "background-color:orange";
+// table2tag.tBodies[0].rows[4].style = "background-color:blue";
+
+// diagonal 
