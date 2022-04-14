@@ -41,3 +41,14 @@ console.log(table2tag.tBodies[0].rows[0].cells[0].textContent);
 // table2tag.tBodies[0].rows[4].style = "background-color:blue";
 
 // diagonal 
+// Array.from(table.rows).map((x,i) => x.cells[i].style.background = "red")
+let tablerows = table2tag.rows;
+console.log(tablerows[0].cells.length)
+for(let i = 0 ; i<tablerows.length;i++){
+    for(let j=0 ; j<tablerows[i].cells.length;j++){
+        if(i==j){
+            tablerows[i].cells[j].style.backround = 'red';
+        }
+    }
+}
+
