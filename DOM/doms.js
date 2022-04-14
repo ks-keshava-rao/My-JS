@@ -34,11 +34,11 @@ console.log(tabletag.tBodies[0].rows[1].cells[0].style = "background-color:yello
 const table2tag = document.body.children[5];
 console.log(table2tag.tBodies[0].rows[0].cells[0].textContent);
 
-table2tag.tBodies[0].rows[0].style = "background-color:yellow";
-table2tag.tBodies[0].rows[1].style = "background-color:red";
-table2tag.tBodies[0].rows[2].style = "background-color:brown";
-table2tag.tBodies[0].rows[3].style = "background-color:orange";
-table2tag.tBodies[0].rows[4].style = "background-color:blue";
+// table2tag.tBodies[0].rows[0].style = "background-color:yellow";
+// table2tag.tBodies[0].rows[1].style = "background-color:red";
+// table2tag.tBodies[0].rows[2].style = "background-color:brown";
+// table2tag.tBodies[0].rows[3].style = "background-color:orange";
+// table2tag.tBodies[0].rows[4].style = "background-color:blue";
 
 // diagonal 
 // Array.from(table.rows).map((x,i) => x.cells[i].style.background = "red")
@@ -48,8 +48,18 @@ for(let i = 0 ; i<tablerows.length;i++){
     for(let j=0 ; j<tablerows[i].cells.length;j++){
         tablerows[i].cells[j].innerText = `${j + 1}:${i + 1}`;
         if(i==j){
-            tablerows[i].cells[j].style.backround = 'red';
+            tablerows[i].cells[j].style.backgroundColor = 'red';
         }
     }
 }
 
+//getElement , queryselectors
+let id = document.getElementById("pdiv");
+id.style  = 'background-color:yellow'
+let cle = document.getElementsByClassName("list-item");
+console.log(cle);
+// cle.style.backgroundColor = "green"
+const listitems = document.querySelectorAll('.list-item');
+console.log(listitems);
+const nodes = document.querySelectorAll('ul > li:last-child');
+console.log(nodes);
