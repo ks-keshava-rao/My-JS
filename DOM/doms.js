@@ -70,3 +70,13 @@ console.log(lis[0].textContent);
 //getelement vs queryselectors
 //getElements are live as they pass reference not the data
 
+//custom attributes
+console.log(ele.id);
+console.log(ele.data);
+console.log(ele.getAttribute('data'));
+console.log(ele.setAttribute('order-placed',"pending"))
+console.log(ele.getAttribute('order-placed'));
+console.log(ele.hasAttribute('data'));
+console.log(ele.removeAttribute('data'));
+console.log(ele.getAttribute('data'));
+console.log(ele.attributes);
