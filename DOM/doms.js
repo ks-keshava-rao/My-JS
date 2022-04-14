@@ -61,7 +61,12 @@ console.log(cle);
 // cle.style.backgroundColor = "green"
 const listitems = document.querySelectorAll('.list-item');
 console.log(listitems);
+//returns list
 const nodes = document.querySelectorAll('ul > li:last-child');
 console.log(nodes[0].textContent);
 const lis = document.querySelectorAll('ul > li:nth-child(1)');
 console.log(lis[0].textContent);
+
+//getelement vs queryselectors
+//getElements are live as they pass reference not the data
+
