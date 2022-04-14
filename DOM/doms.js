@@ -62,4 +62,6 @@ console.log(cle);
 const listitems = document.querySelectorAll('.list-item');
 console.log(listitems);
 const nodes = document.querySelectorAll('ul > li:last-child');
-console.log(nodes);
+console.log(nodes[0].textContent);
+const lis = document.querySelectorAll('ul > li:nth-child(1)');
+console.log(lis[0].textContent);
