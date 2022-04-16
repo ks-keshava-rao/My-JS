@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clickBn" >Click here</button>
+    <button id="clickBtn" >Method 2</button>
+    <script>
+        function callme(){
+            alert('clicked');
+        }
+        document.getElementById('clickBn').onclick = callme; 
+        //events
+        function call2(){
+            alert("metho2 call 1");
+        }
+        function call3(){
+            alert("metho2 call 2");
+        }
+        //addEventListner supports multiple call
+        document.getElementById('clickBtn').addEventListener('click',call2);
+        document.getElementById('clickBtn').addEventListener('click',call3);
+        document.getElementById('clickBtn').removeEventListener('click',call3);
+        
+    </script>  
+</body>
+</html>
