@@ -10,7 +10,11 @@
     <button id="clickBn" >Click here</button>
     <button id="clickBtn" >Method 2</button>
     <script>
-        function callme(){
+        function callme(event){
+            console.log(event.type);
+            console.log(event.currentTarget);
+            console.log(event.clientY);
+            console.log(event.clientX);
             alert('clicked');
         }
         document.getElementById('clickBn').onclick = callme; 
@@ -25,7 +29,8 @@
         document.getElementById('clickBtn').addEventListener('click',call2);
         document.getElementById('clickBtn').addEventListener('click',call3);
         document.getElementById('clickBtn').removeEventListener('click',call3);
-        
+        //this in event listers refers to element to which the event is attached
+
     </script>  
 </body>
 </html>
