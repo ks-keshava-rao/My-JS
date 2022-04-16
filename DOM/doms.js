@@ -80,3 +80,22 @@ console.log(ele.hasAttribute('data'));
 console.log(ele.removeAttribute('data'));
 console.log(ele.getAttribute('data'));
 console.log(ele.attributes);
+
+// creating and removing the node elemets
+
+const newdiv = document.createElement('div');
+newdiv.textContent = "hello world";
+// const newtext = document.createTextNode('hello')
+// newdiv.appendChild(newtext);
+newdiv.innerHTML = `<div id="pdiv">
+<div id="c-div">
+    <p>This para is inside the newdiv</p>
+</div>
+</div>`
+body.append(newdiv);
+// body.prepend(newdiv);
+// body.prepend(newdiv);
+// body.before(newdiv);
+// body.after(newdiv);
+// replace.replaceWith(newdiv);
+// replace.remove();
