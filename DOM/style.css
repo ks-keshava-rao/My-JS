@@ -18,7 +18,7 @@
     box-sizing: border-box;
     overflow: scroll;
 }
-offset-top - parent to border
+/* offset-top - parent to border
 /* offset-left - parent to border */
 offset height 
 client-top - top border height
@@ -27,5 +27,4 @@ client-width - padding + content - scrollbar
 client-height - padding + content height
 scroll-width - content + padding 
 scroll-height - outer/hidden height + inner/element height
-scroll-left/top - hidden part of content 
-scroll-
+scroll-left/top - hidden part of content  */
