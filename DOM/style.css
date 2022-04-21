@@ -20,11 +20,11 @@
 }
 /* offset-top - parent to border
 /* offset-left - parent to border */
-offset height 
+/* offset height 
 client-top - top border height
 client-left - left border with scroll bar width
 client-width - padding + content - scrollbar 
 client-height - padding + content height
 scroll-width - content + padding 
 scroll-height - outer/hidden height + inner/element height
-scroll-left/top - hidden part of content  */
+scroll-left/top - hidden part of content  */ 
