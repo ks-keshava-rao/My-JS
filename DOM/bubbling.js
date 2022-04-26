@@ -18,12 +18,12 @@ document.querySelector('#child')
 document.querySelector('#grandparent')
 .addEventListener('click',()=>{
     console.log("grandparent clicked");
-},false)
+},true)
 document.querySelector('#parent')
 .addEventListener('click',()=>{
     console.log("parent clicked");
-},false)
+},true)
 document.querySelector('#child')
 .addEventListener('click',()=>{
     console.log("child clicked");
-},false)
+},true)
