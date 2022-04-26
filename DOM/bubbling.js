@@ -6,7 +6,7 @@ document.querySelector('#grandparent')
 document.querySelector('#parent')
 .addEventListener('click',(e)=>{
     console.log("parent clicked");
-    e.stopPropagation();
+    e.stopImmediatePropagation();
 },false)
 document.querySelector('#child')
 .addEventListener('click',()=>{
@@ -15,15 +15,15 @@ document.querySelector('#child')
 //by default if the false argument is not passed then
  //it is in bubbling mode
  //EVENT BUBBLING
-document.querySelector('#grandparent')
-.addEventListener('click',()=>{
-    console.log("grandparent clicked");
-},true)
-document.querySelector('#parent')
-.addEventListener('click',()=>{
-    console.log("parent clicked");
-},true)
-document.querySelector('#child')
-.addEventListener('click',()=>{
-    console.log("child clicked");
-},true)
+// document.querySelector('#grandparent')
+// .addEventListener('click',()=>{
+//     console.log("grandparent clicked");
+// },true)
+// document.querySelector('#parent')
+// .addEventListener('click',()=>{
+//     console.log("parent clicked");
+// },true)
+// document.querySelector('#child')
+// .addEventListener('click',()=>{
+//     console.log("child clicked");
+// },true)
