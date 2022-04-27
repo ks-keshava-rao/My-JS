@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #clickBn {
+            padding: 10px 14px;
+            background-color: rgb(161, 84, 239);
+            border: 2px solid rgb(108, 53, 164);
+            font-weight: italic;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        #clickBtn{
+            padding: 10px 14px;
+            background-color: rgb(161, 84, 239);
+            border: 2px solid rgb(108, 53, 164);
+            font-weight: italic;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
     <title>Document</title>
 </head>
-<body>
-    <button id="clickBn" >Click here</button>
-    <button id="clickBtn" >Method 2</button>
-    <script>
-        function callme(event){
-            console.log(event.type);
-            console.log(event.currentTarget);
-            console.log(event.clientY);
-            console.log(event.clientX);
-            alert('clicked');
-        }
-        document.getElementById('clickBn').onclick = callme; 
-        //events
-        function call2(){
-            alert("metho2 call 1");
-        }
-        function call3(){
-            alert("metho2 call 2");
-        }
-        //addEventListner supports multiple call
-        document.getElementById('clickBtn').addEventListener('click',call2);
-        document.getElementById('clickBtn').addEventListener('click',call3);
-        document.getElementById('clickBtn').removeEventListener('click',call3);
-        //this in event listers refers to element to which the event is attached
 
-    </script>  
+<body>
+    <div id="container">
+        <h1 id="heading">This heading</h1>
+        <p id="para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, dicta magnam pariatur suscipit officiis
+            veniam minima tenetur aliquam dolorem sunt eos sed nam quo ratione obcaecati atque culpa optio odio
+            reiciendis in magni consequuntur? Iste reiciendis odit error impedit. Quidem libero consequatur iusto ut,
+            nam laudantium voluptate quibusdam harum voluptates adipisci culpa perspiciatis quae a placeat alias
+            reiciendis veniam suscipit optio voluptatem deserunt maiores! Porro necessitatibus vel magni qui tempora
+            ipsam ea! Praesentium error quaerat, magni incidunt nostrum molestias optio voluptatum natus laudantium ab!
+            Consequuntur delectus commodi fuga aliquid at distinctio aliquam cum voluptatem a magni repudiandae debitis
+            magnam consequatur laborum, nulla tenetur alias vitae sint natus enim. Incidunt architecto sed at sunt
+            aperiam temporibus neque voluptate nam, placeat obcaecati perspiciatis est, id explicabo officia possimus
+            dignissimos accusantium cupiditate labore debitis quidem? Saepe ipsum iusto hic repudiandae expedita maxime,
+            nobis corporis, quidem quibusdam veritatis quo maiores, ab culpa quod consectetur ullam veniam quae quaerat
+            pariatur amet? Voluptatum vero libero exercitationem voluptas dolor voluptate maiores quam distinctio
+            provident, harum recusandae dolorum est consequatur commodi! Laudantium doloribus repellat corrupti
+            dignissimos officia, quasi, ducimus ullam blanditiis necessitatibus nisi iusto. Id facere quos libero omnis
+            incidunt recusandae cupiditate beatae reiciendis voluptas quod! Sit reiciendis provident, magni itaque eius
+            quas dolorem iure minima, adipisci ab inventore cupiditate earum quibusdam officia dicta esse nulla sequi
+            molestiae corrupti dolor aliquid reprehenderit blanditiis enim veniam. Sunt magni commodi velit. Enim dicta
+            expedita quos doloremque, natus ea maxime necessitatibus fuga repudiandae exercitationem eligendi, nulla
+            iure? Ratione corrupti neque laudantium reprehenderit eius rem enim aspernatur velit excepturi consequatur
+            laborum, nesciunt magnam sed atque quos ipsum impedit perferendis commodi, quia doloremque voluptates
+            incidunt? Vitae at minus ratione minima mollitia qui! Sint voluptatibus deleniti beatae eum eius impedit
+            minima modi! Quasi quo totam accusantium perspiciatis fuga ex perferendis molestias voluptates est iusto
+            impedit nemo aut sequi, itaque quaerat ad neque cum possimus dolorum ullam dicta dolorem facilis voluptatem
+            accusamus. Debitis minus dolore maiores, laboriosam ad quibusdam et tempore voluptate pariatur enim, soluta,
+            quisquam explicabo facere! Id magni eaque recusandae aliquid soluta. Optio inventore molestiae, maiores
+            adipisci laborum dignissimos, perspiciatis vero labore assumenda odit, tempora harum laudantium voluptates
+            quod! Fuga excepturi eveniet dolorum. Aut quasi porro assumenda illum amet voluptate laboriosam architecto
+            labore eligendi minus sint facilis sed suscipit fuga, necessitatibus possimus eos repellat hic odit
+            reiciendis dolores. Rerum aperiam quaerat perspiciatis, laudantium praesentium numquam possimus aspernatur,
+            mollitia reiciendis officia dignissimos explicabo temporibus dolor in hic? Laborum, explicabo nesciunt ipsum
+            cum iste deleniti dolorum accusantium, dolore sapiente exercitationem, vel quaerat aliquam? Velit
+            voluptates, minima vero veritatis quaerat tempora, quis nisi eveniet itaque ipsam doloremque nostrum amet
+            laboriosam labore non iusto, perspiciatis inventore dolorum iste nobis ut suscipit perferendis adipisci!
+            Quisquam dicta, dolorem dignissimos minima incidunt error doloribus eos iusto nemo illo, esse assumenda
+            nihil quaerat ut ab consequatur, eius perferendis ratione obcaecati neque qui! Accusamus temporibus a cumque
+            saepe. Dolor temporibus vero, odio corrupti quod corporis qui praesentium possimus culpa accusantium.
+            Tempora molestiae esse id in. Magnam optio doloremque officiis sit consequuntur ut?
+        </p>
+    </div>
+    <button id="clickBn" >Click here</button>
+    <button id="clickBtn" >Click here again</button>
+    <script src="eventscript.js">
+        
+    </script>
 </body>
+
 </html>
