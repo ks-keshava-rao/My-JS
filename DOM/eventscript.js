@@ -10,7 +10,7 @@ para.addEventListener('mouseout', runout)
 para.addEventListener('ondblclick',right );
 btn2.addEventListener('mouseup', pressed);
 btn2.addEventListener('mousedown', pressedleft);
-btn2.addEventListener('oncontextmenu', rightclick);
+btn2.addEventListener('contextmenu', rightclick);
 function rightclick(){
     console.log("right click");
 }
