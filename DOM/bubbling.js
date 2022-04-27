@@ -27,3 +27,5 @@ document.querySelector('#child')
 // .addEventListener('click',()=>{
 //     console.log("child clicked");
 // },true)
+//Events- all 
+// reason for bubling capturing 
