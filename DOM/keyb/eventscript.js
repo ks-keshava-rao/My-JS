@@ -7,7 +7,7 @@ btn.addEventListener('click', togglehide)
 // btne.onclick = togglehide ;
 para.addEventListener('mouseover', run);
 para.addEventListener('mouseout', runout)
-para.addEventListener('ondblclick',right );
+para.addEventListener('dblclick',right );
 btn2.addEventListener('mouseup', pressed);
 btn2.addEventListener('mousedown', pressedleft);
 btn2.addEventListener('contextmenu', rightclick);
@@ -21,7 +21,7 @@ function pressedleft(){
     console.log("released");
 }
 function right(){
-    console.log("mouse right clicked")
+    console.log("mouse doubleclick clicked")
 }
 function run() {
     console.log("mouse Inside")
