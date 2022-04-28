@@ -45,8 +45,8 @@
  <script>
      input = document.querySelectorAll(".in");
     // console.log(input[0]);
-    input[0].addEventListener('keydown',function(){
-        alert(this.value)
+    input[0].addEventListener('keydown',function(e){
+        alert(event.target.value)
     })
     input[1].addEventListener('keyup',function(){
         alert(this.value)
