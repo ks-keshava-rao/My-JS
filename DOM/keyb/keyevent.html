@@ -8,6 +8,7 @@
     <style>
         
         body{
+            background : url("bg.webp");
             font-family: tahoma;
             background-color: rgb(243, 163, 43);
         }
@@ -17,7 +18,7 @@
             border : 2px solid #000;
             border-radius: 15px;
             padding: 25px;
-            background-color: rgba(0, 0, 0, .5);
+            background-color: rgba(99, 100, 100, 0.5);
             color : #fff;
             box-shadow: -2px 2px 15px #000;
         }
@@ -35,11 +36,24 @@
     <div id="form">
         <h1 id="h1">Keyboard event</h1>
         <p>On keydown</p>
-        <input id type="text">
+        <input class="in" type="text">
         <p>On keyup</p>
-        <input type="text">
+        <input class="in" type="text">
         <p>On keypres</p>
-        <input type="text">
+        <input  class="in" type="text">
     </div>
+ <script>
+     input = document.querySelectorAll(".in");
+    // console.log(input[0]);
+    input[0].addEventListener('keydown',function(){
+        alert(this.value)
+    })
+    input[1].addEventListener('keyup',function(){
+        alert(this.value)
+    })
+    input[2].addEventListener('keypress',function(){
+        alert(this.value)
+    })
+</script>
 </body>
 </html>
