@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="ele" >click here</button>
+    <script>
+        // let event = new Event(type[, options]);
+    //    let cusevent = new Event("Click");
+    //    ele.dispatchEvent(cusevent);
+    // for customising builtin events use MouseEvent,Focusevent,WheelEvent,
+    //for custom event use CustomEvent 
+    ele.addEventListener("hello",function(event){
+        alert(event.detail.name);
+    });
+    ele.dispatchEvent(new CustomEvent("hello",{detail:{name:'keshav'}}))
+    </script>
+</body>
+</html>
