@@ -9,10 +9,11 @@ const Techdet = [
         product: "AnswerConnect"
     }
 ]
-function register(details) {
+function register(details,callback) {
     setTimeout(function () {
         Techdet.push(details)
-        alert("Details updated succesfully")
+        console.log("Details updated succesfully")
+        callback();
     }, 3000);
 }
 function getdata() {
@@ -20,7 +21,7 @@ function getdata() {
         let str = "";
         Techdet.forEach(function(info) {                                                               
             str += `<li class="list-group-item "> ${info.company} - ${info.product}  </li>`
-            alert("Details fetched")
+            console.log("Details fetched");
         });
         document.getElementById('uldiv').innerHTML = str;
     },1000 );
@@ -33,6 +34,6 @@ let newtech2 = {
     company: "adobe",
     product: "adobexd"
 }
-register(newtech);
+register(newtech,getdata);
 register(newtech2);
-getdata();
+// getdata();
