@@ -19,18 +19,27 @@
 // The first promise here was fastest, but it was rejected,
 // so the second promise became the result. After the first fulfilled promise “wins the race”, all further results are ignored.
 
+// Promise.resolve(value) creates a resolved promise with the result value.
+// used for compatibility, when a function is expected to return a promise.
+
 
   Promise.any([
     new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
     new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
     new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
   ]).then(alert);
+  
+  Promise.all([
+    new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+    new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
+    new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
+  ]).then(alert);
 
   //async await 
-  async function showDP(){
-    let response = await fetch('/article/promise-chaining/user.json');
-    let user = await response.json();
-    
-    let githubResponse = await fetch(`https://api.github.com/users/${user.name}`)
-  }
+  // async function showDP(){
+  //   let response = await fetch('/my.json').catch(function(){console.log("error")});
+  //   let user = await response.json();
+  //   console.log(user)
+  //   // let githubResponse = await fetch(`https://api.github.com/users/${user.name}`)
+  // }
 
