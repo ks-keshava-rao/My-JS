@@ -1,7 +1,7 @@
 async function asynch(){
     console.log('inside the function');
     console.log('before fetching');
-    const response = await fetch('https://api.github.com/users')
+    const response = await fetch('https://api.github.com/users/')
     console.log("before response")
     const users = await response.json();
     console.log("users resolved");
